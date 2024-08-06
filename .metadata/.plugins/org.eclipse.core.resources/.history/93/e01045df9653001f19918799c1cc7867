@@ -14,19 +14,20 @@ public class Program {
 		ChessMatch chessMatch = new ChessMatch();
 
 		while (true) {
-		UI.printBoard(chessMatch.getPieces());
+		UI.printBoart(chessMatch.getPieces());
 		System.out.println();
-		System.out.print("Source: ");
+		System.out.println("Source: ");
 		ChessPosition source = UI.readChessPosition(sc);
 
 		System.out.println();
 
-		System.out.print("Target: ");
+		System.out.println("Target: ");
 		ChessPosition target = UI.readChessPosition(sc);
 
 		ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 
 		}
+		sc.close();
 	}
 
 }
