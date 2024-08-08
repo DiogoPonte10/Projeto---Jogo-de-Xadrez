@@ -74,11 +74,7 @@ public class ChessMatch {
 
 		check = (testCheck(opponent(currentPlayer))) ? true : false;
 
-		if (testeCheckMate(opponent(currentPlayer))) {
-			checkMate = true;
-		}
 		nextTurn();
-
 		return (ChessPiece)capturedPiece;
 	}
 
