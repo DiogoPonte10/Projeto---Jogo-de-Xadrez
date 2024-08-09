@@ -79,9 +79,8 @@ public class ChessMatch {
 
 		if (testeCheckMate(opponent(currentPlayer))) {
 			checkMate = true;
-		} else {
-			nextTurn();
 		}
+		nextTurn();
 
 		return (ChessPiece)capturedPiece;
 	}
@@ -91,7 +90,6 @@ public class ChessMatch {
 		p.increaseMoveCount();
 		Piece capturedPiece = board.removePiece(target);
 		board.placePiece(p, target);
-
 		if (capturedPiece != null) {
 			piecesOnTheBoard.remove(capturedPiece);
 			capturedPieces.add(capturedPiece);
