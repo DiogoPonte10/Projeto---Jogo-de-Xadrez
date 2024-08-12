@@ -118,7 +118,7 @@ public class ChessMatch {
 		return (ChessPiece)capturedPiece;
 	}
 
-	public ChessPiece replacePromotedPiece(String type) {
+	private ChessPiece replacePromotedPiece(String type) {
 		if (promoted == null) {
 			throw new IllegalStateException("There is no piece to be promoted");
 		}
